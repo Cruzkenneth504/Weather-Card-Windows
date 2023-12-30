@@ -1,5 +1,7 @@
 body {
- background: hsl(203, 73%, 10%);
+    background: linear-gradient(-45deg, #411204, #000000, #0a546e, #0a5f4b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  height: 100vh;
  display: flex;
@@ -10,16 +12,21 @@ body {
 }
 
 #weather-container {
-    background:hsla(216, 97%, 31%, 0.308);
+    background-color:rgba(255, 255, 255, 0.616);
     max-width: 450px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(10px);
     border: 2px solid hsl(218, 80%, 2%);
     text-align: center;
 }
 
+h1{
+    color: #ffffffc4;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
 h2, label, p {
     color: #fff;
@@ -46,9 +53,9 @@ button {
     }
 
 button:hover {
-    background: hsl(203, 73%, 10%);
-    color: white;
-    border: 1px solid greenyellow;
+    background: hsla(203, 86%, 17%, 0.527);
+    color: rgba(240, 232, 232, 0.849);
+    border: 1px solid rgb(232, 236, 223);
     animation: rotateBorder 4s linear infinite;
 }
 
@@ -97,3 +104,14 @@ button:hover {
     color:#e2d7d7;
     margin-top: 10px;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
