@@ -20,6 +20,7 @@ body {
     backdrop-filter: blur(10px);
     border: 2px solid hsl(218, 80%, 2%);
     text-align: center;
+    height: auto;
 }
 
 h1{
